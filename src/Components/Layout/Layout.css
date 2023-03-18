@@ -1,0 +1,33 @@
+/* color #F46B5B */
+.Icons-header{
+    color: #919090;
+}
+.Icons-header2{
+    color: #F46B5B;
+}
+.banner{
+    background-color:#F46B5B ;
+    height: 155px;
+}
+
+.IconsFooter{
+    color: #F46B5B;
+    font-size: 1.2rem !important;
+}
+.FollowUs{
+    background-color: #F46B5B;
+    padding: 3px;
+    color: white;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 600px) {
+.banner{
+    background-color:#F46B5B ;
+    height: 200px;
+}
+.hed{
+    height: 70px !important;
+    padding: 10px;
+}
+
+}
