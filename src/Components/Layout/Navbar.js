@@ -15,7 +15,7 @@ import i18next from "i18next";
 import { alpha, InputBase, Stack } from "@mui/material";
 import { Link } from "react-router-dom";
 
-const pages = ["Home", "About", "Product", "Blog", "Contact"];
+const pages = ["Home", "About", "Products", "Blog", "Contact"];
 const settings = ["AR", "En"];
 
 function Navbar() {
@@ -134,6 +134,7 @@ function Navbar() {
 								key={page}
 								onClick={handleCloseNavMenu}
 								sx={{ m: 2, color: "black", display: "block" }}
+								
 							>
 								<Link to={page}>{page}</Link>
 							</Button>

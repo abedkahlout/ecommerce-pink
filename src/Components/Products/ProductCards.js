@@ -51,7 +51,7 @@ function ProductCards() {
 				<>
 					<Box>
 						<Grid container spacing={2} my={3}>
-							<Grid item xs={4}>
+							<Grid item xs={12} lg={4}>
 								<img
 									src={e.img}
 									className="b-rdius"
@@ -59,7 +59,7 @@ function ProductCards() {
 									height={"200px"}
 								/>
 							</Grid>
-							<Grid item xs={8}>
+							<Grid item xs={8} lg={8}>
 								<Stack direction={"row"} alignItems={"center"}>
 									5.0{" "}
 									<Rating

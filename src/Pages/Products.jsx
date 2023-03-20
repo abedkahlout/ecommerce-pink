@@ -11,11 +11,11 @@ function Products() {
 			<Container>
 				<TitleFilter />
 				<Grid container spacing={2} my={3}>
-					<Grid item xs={3}>
+					<Grid item xs={12} lg={3}>
                     <Filter />
 
 					</Grid>
-					<Grid item xs={8}>
+					<Grid item xs={12} lg={8}>
                     <ProductCards />
 
 					</Grid>
