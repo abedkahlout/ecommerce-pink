@@ -9,6 +9,7 @@ import Home from "./Pages/Home";
 import Product from "./Pages/ProductDet";
 import About from "./Pages/About";
 import Products from "./Pages/Products";
+import NotFound from "./Pages/NotFound";
 
 const theme = createTheme({
 	direction: "rtl",
@@ -37,6 +38,7 @@ function App() {
 				<Route path="productdetail" element={<Product />} />
 				<Route path="about" element={<About />} />
 				<Route path="products" element={<Products />} />
+				<Route path="*" element={<NotFound />} />
 				</Routes>
 			</ThemeProvider>
 		</div>

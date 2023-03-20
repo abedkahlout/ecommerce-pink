@@ -13,9 +13,30 @@ import MenuItem from "@mui/material/MenuItem";
 import "./Layout.css";
 import i18next from "i18next";
 import { alpha, InputBase, Stack } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
-const pages = ["Home", "About", "Products", "Blog", "Contact"];
+const pages = [
+	{
+		links: "/home",
+		name: "home",
+	},
+	{
+		links: "/about",
+		name: "about",
+	},
+	{
+		links: "/products",
+		name: "products",
+	},
+	{
+		links: "/blog",
+		name: "blog",
+	},
+	{
+		links: "/contact",
+		name: "contact",
+	},
+];
 const settings = ["AR", "En"];
 
 function Navbar() {
@@ -102,9 +123,9 @@ function Navbar() {
 								color: "black",
 							}}
 						>
-							{pages.map((page) => (
-								<MenuItem key={page} onClick={handleCloseNavMenu}>
-									<Typography textAlign="center">{page}</Typography>
+							{pages.map((e) => (
+								<MenuItem key={e.name} onClick={handleCloseNavMenu}>
+									<Typography textAlign="center">{e.name}</Typography>
 								</MenuItem>
 							))}
 						</Menu>
@@ -129,14 +150,15 @@ function Navbar() {
 					<Box
 						sx={{ color: "black", flexGrow: 1, display: { xs: "none", md: "flex" } }}
 					>
-						{pages.map((page) => (
+						{pages.map((e, index) => (
 							<Button
-								key={page}
+								key={index}
 								onClick={handleCloseNavMenu}
 								sx={{ m: 2, color: "black", display: "block" }}
-								
 							>
-								<Link to={page}>{page}</Link>
+								<Link key={index} to={e.links}>
+									{e.name}
+								</Link>
 							</Button>
 						))}
 					</Box>

@@ -3,37 +3,37 @@ import { Box, Stack } from "@mui/system";
 import StarIcon from "@mui/icons-material/Star";
 import React from "react";
 import { Favorite, FavoriteBorder } from "@mui/icons-material";
-import Pagination from '@mui/material/Pagination';
+import Pagination from "@mui/material/Pagination";
 
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const cards = [
 	{
-    img:"/images/huawi.png",
+		img: "/images/huawi.png",
 		title: "huawi phone best",
 		stars: 5,
 		descript:
 			"ALEXA HAS SKILLS - With tens of thousands of skills and counting, Alexa is always getting smarter and adding new skills like tracking fitness, playing games, and more.",
 		price: 25.99,
 	},
-  {
-    img:"/images/camera.webp",
+	{
+		img: "/images/camera.webp",
 		title: "Camera kanon Pro",
 		stars: 5,
 		descript:
 			"ALEXA HAS SKILLS - With tens of thousands of skills and counting, Alexa is always getting smarter and adding new skills like tracking fitness, playing games, and more.",
 		price: 66.99,
 	},
-  {
-    img:"/images/comp.webp",
+	{
+		img: "/images/comp.webp",
 		title: "Laptop MSI 2022",
 		stars: 5,
 		descript:
 			"ALEXA HAS SKILLS - With tens of thousands of skills and counting, Alexa is always getting smarter and adding new skills like tracking fitness, playing games, and more.",
 		price: 80.99,
 	},
-  {
-    img:"/images/iphone.jpeg",
+	{
+		img: "/images/iphone.jpeg",
 		title: "Iphone 13promax ",
 		stars: 5,
 		descript:
@@ -52,12 +52,7 @@ function ProductCards() {
 					<Box>
 						<Grid container spacing={2} my={3}>
 							<Grid item xs={12} lg={4}>
-								<img
-									src={e.img}
-									className="b-rdius"
-									width={"100%"}
-									height={"200px"}
-								/>
+								<img src={e.img} className="b-rdius" width={"100%"} height={"200px"} />
 							</Grid>
 							<Grid item xs={8} lg={8}>
 								<Stack direction={"row"} alignItems={"center"}>
@@ -71,7 +66,7 @@ function ProductCards() {
 									/>
 								</Stack>
 								<Typography sx={{ fontWeight: 700, fontSize: "18px" }} my={1}>
-                {e.title}
+									{e.title}
 								</Typography>
 								<Stack
 									direction={"row"}
@@ -81,7 +76,7 @@ function ProductCards() {
 								>
 									<Typography sx={{ fontSize: 14, width: "70%" }}>
 										{" "}
-									{e.descript}
+										{e.descript}
 									</Typography>
 									<Typography className="pink" sx={{ fontSize: 32, fontWeight: 700 }}>
 										{e.price} $
@@ -107,14 +102,11 @@ function ProductCards() {
 							</Grid>
 						</Grid>
 					</Box>
-
 				</>
 			))}
-      <Stack direction={'row'} justifyContent={'center'}>
-      <Pagination count={4} />
-
-      </Stack>
-
+			<Stack direction={"row"} justifyContent={"center"}>
+				<Pagination count={4} />
+			</Stack>
 		</div>
 	);
 }
