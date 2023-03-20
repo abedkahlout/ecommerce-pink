@@ -1,0 +1,23 @@
+
+.BlogsCont #outlined-basic2 {
+	width: 25vw;
+	border: 1px solid rgba(192, 192, 192, 0.44) !important;
+	box-shadow: 0px 12px 23px -5px rgba(0, 0, 0, 0.1);
+    padding: 8px !important;
+    border-radius:6px 0 0 6px !important;
+
+     }
+    
+    .BlogsCont  .muiltr-1d3z3hw-MuiOutlinedInput-notchedOutline {
+	border: 1px solid rgb(252, 252, 252);
+	opacity: 0.2;
+    border-radius:6px 0 0 6px !important;
+
+}
+.BlogsCont  .srch {
+	box-shadow: 0px 12px 23px -5px rgba(0, 0, 0, 0.1);
+    padding: 0 !important;
+	color: white !important;
+	border-radius: 0 6px 6px 0 !important;
+	background-color: #f46b5b !important;
+}

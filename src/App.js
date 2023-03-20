@@ -10,6 +10,7 @@ import Product from "./Pages/ProductDet";
 import About from "./Pages/About";
 import Products from "./Pages/Products";
 import NotFound from "./Pages/NotFound";
+import Blog from "./Pages/Blog";
 
 const theme = createTheme({
 	direction: "rtl",
@@ -38,6 +39,7 @@ function App() {
 				<Route path="productdetail" element={<Product />} />
 				<Route path="about" element={<About />} />
 				<Route path="products" element={<Products />} />
+				<Route path="blog" element={<Blog />} />
 				<Route path="*" element={<NotFound />} />
 				</Routes>
 			</ThemeProvider>

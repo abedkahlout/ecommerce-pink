@@ -22,7 +22,7 @@ function OurTeams() {
 			<Typography textAlign={"center"}>
 				We Have best TEAM in middle east (Developers , Marketing , Designer){" "}
 			</Typography>
-			<Stack direction={"row"} justifyContent={"space-between"}>
+			<Stack direction={"row"} flexWrap={'wrap'} justifyContent={"space-between"}>
 				<Card sx={{ minWidth: 290, my: 3 }}>
 					<CardMedia
 						sx={{ height: 240 }}
