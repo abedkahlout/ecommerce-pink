@@ -54,7 +54,7 @@ function ProductCards() {
 							<Grid item xs={12} lg={4}>
 								<img src={e.img} className="b-rdius" width={"100%"} height={"200px"} />
 							</Grid>
-							<Grid item xs={8} lg={8}>
+							<Grid item xs={12} lg={8}>
 								<Stack direction={"row"} alignItems={"center"}>
 									5.0{" "}
 									<Rating
@@ -86,7 +86,7 @@ function ProductCards() {
 								<Stack
 									direction={"row"}
 									alignItems={"center"}
-									justifyContent={"space-between"}
+									justifyContent={{xs:"space-between" , lg:'space-between'}}
 									mt={3}
 								>
 									<Button className="pink-btn">ADD To Card</Button>

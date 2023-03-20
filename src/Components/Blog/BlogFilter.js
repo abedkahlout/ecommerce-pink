@@ -29,6 +29,7 @@ function BlogFilter() {
 					placeholder="Search Item Here"
 					fullWidth
 					variant="outlined"
+                    
 				/>
 				<Button className="srch">
 					<SearchIcon />

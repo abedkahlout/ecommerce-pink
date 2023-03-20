@@ -10,5 +10,5 @@
 	font-family: "Cairo", "Lato" !important;
 }
 body{
-	overflow-x: hidden;
+	overflow-x: hidden !important;
 }

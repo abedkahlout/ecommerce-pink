@@ -38,7 +38,7 @@ function Header() {
 						direction={"row"}
 						justifyContent={"space-between"}
 						alignItems={"center"}
-						gap={5}
+						gap={{ xs: 1, lg: 5 }}
 					>
 						<Stack direction={'row'} alignItems={'center'} gap={1}>
 							{" "}

@@ -9,12 +9,13 @@ function Banner() {
 			<Container>
 				<Stack
 					direction={{ xs: "column", md: "row" }}
-					justifyContent={"space-between"}
-					alignItems={{ xs: "start", md: "center" }}
+					justifyContent={{ xs: "center", md: "space-between" }}
+					alignItems={{ xs: "center", md: "center" }}
 					sx={{ height: "155px", color: "white" }}
+					gap={{ xs: "10px", md: "0" }}
 				>
 					<Box>
-						<Typography variant="h4" sx={{ fontSize: "2.7rem" }}>
+						<Typography variant="h4" sx={{ fontSize: {xs:"1.75rem" , lg:"2.75rem"} }}>
 							Join our newselleter now !
 						</Typography>
 						<Typography variant="caption">
