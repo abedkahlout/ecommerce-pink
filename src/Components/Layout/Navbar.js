@@ -7,16 +7,13 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import "./Layout.css";
 import i18next from "i18next";
 import { alpha, InputBase, Stack } from "@mui/material";
-import SearchIcon from "@mui/icons-material/Search";
-import styled from "@emotion/styled";
+import { Link } from "react-router-dom";
 
 const pages = ["Home", "About", "Product", "Blog", "Contact"];
 const settings = ["AR", "En"];
@@ -138,7 +135,7 @@ function Navbar() {
 								onClick={handleCloseNavMenu}
 								sx={{ m: 2, color: "black", display: "block" }}
 							>
-								{page}
+								<Link to={page}>{page}</Link>
 							</Button>
 						))}
 					</Box>
@@ -147,7 +144,13 @@ function Navbar() {
 						<Tooltip title="Language">
 							<Box
 								onClick={handleOpenUserMenu}
-								sx={{ color: "white", bgcolor: "#F46B5B ", py: 0.3, px: 1, borderRadius:1 }}
+								sx={{
+									color: "white",
+									bgcolor: "#F46B5B ",
+									py: 0.3,
+									px: 1,
+									borderRadius: 1,
+								}}
 							>
 								Language
 							</Box>

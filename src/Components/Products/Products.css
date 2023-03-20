@@ -1,0 +1,40 @@
+ .MuiSlider-colorPrimary {
+	color: #f46b5b !important;
+}
+ .MuiCheckbox-colorPrimary {
+	color: #f46b5b !important;
+}
+.TitleFilter #outlined-basic {
+	width: 25vw;
+	border: none !important;
+	box-shadow: 0px 12px 23px -5px rgba(0, 0, 0, 0.1);
+    padding: 13px !important;
+    border-radius:6px 0 0 6px !important;
+
+}
+.TitleFilter .muiltr-1d3z3hw-MuiOutlinedInput-notchedOutline {
+	border: 1px solid rgb(252, 252, 252);
+	opacity: 0.2;
+    border-radius:6px 0 0 6px !important;
+
+}
+.TitleFilter .srch {
+	box-shadow: 0px 12px 23px -5px rgba(0, 0, 0, 0.1);
+    padding: 0 !important;
+	color: white !important;
+	border-radius: 0 6px 6px 0 !important;
+	background-color: #f46b5b !important;
+}
+.TitleFilter .gry-srch{
+    margin: 12px 7px !important;
+    background-color:rgb(228, 228, 228) !important;
+    color: rgb(59, 59, 59) !important;
+    padding: 5px 20px !important ;
+}
+ .b-rdius{
+    border-radius: 10px;
+}
+ .pink-btn{
+    background-color: #f46b5b !important;
+    color: white !important ;
+}

@@ -8,6 +8,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "./Home.css";
 import { Navigation, Mousewheel, Keyboard } from "swiper";
+import { Link } from "react-router-dom";
+import { color } from "@mui/system";
 
 function BestSales() {
 	return (
@@ -26,47 +28,65 @@ function BestSales() {
 					className="mySwiper"
 				>
 					<SwiperSlide>
-						<Box className="bg-gray">
-							<img src="/images/huawi.png" height={"100px"} />
-							<Typography variant="h6" sx={{fontWeight:700}}>Huawi Phone</Typography>
-							<Typography sx={{fontWeight:700}}>999$</Typography>
-							<Typography>ADD To Card</Typography>
-						</Box>
+						<Link to="/productdetail" sx={{ color: "black" }}>
+							<Box className="bg-gray">
+								<img src="/images/huawi.png" height={"100px"} />
+								<Typography variant="h6" sx={{ fontWeight: 700 }}>
+									Huawi Phone
+								</Typography>
+								<Typography sx={{ fontWeight: 700 }}>999$</Typography>
+								<Typography>ADD To Card</Typography>
+							</Box>
+						</Link>
 					</SwiperSlide>
 					<SwiperSlide>
-                    <Box className="bg-gray">
-							<img src="/images/huawi.png" height={"100px"} />
-							<Typography variant="h6" sx={{fontWeight:700}}>Huawi Phone</Typography>
-							<Typography sx={{fontWeight:700}}>999$</Typography>
-							<Typography>ADD To Card</Typography>
-						</Box>
+						<Link to="/productdetail" sx={{ color: "black" }}>
+							<Box className="bg-gray">
+								<img src="/images/huawi.png" height={"100px"} />
+								<Typography variant="h6" sx={{ fontWeight: 700 }}>
+									Huawi Phone
+								</Typography>
+								<Typography sx={{ fontWeight: 700 }}>999$</Typography>
+								<Typography>ADD To Card</Typography>
+							</Box>
+						</Link>
 					</SwiperSlide>
 					<SwiperSlide>
-						<Box className="bg-gray">
-							<img src="/images/huawi.png" height={"100px"} />
-							<Typography variant="h6" sx={{fontWeight:700}}>Huawi Phone</Typography>
-							<Typography sx={{fontWeight:700}}>999$</Typography>
-							<Typography>ADD To Card</Typography>
-						</Box>{" "}
+						<Link to="/productdetail" sx={{ color: "black" }}>
+							<Box className="bg-gray">
+								<img src="/images/huawi.png" height={"100px"} />
+								<Typography variant="h6" sx={{ fontWeight: 700 }}>
+									Huawi Phone
+								</Typography>
+								<Typography sx={{ fontWeight: 700 }}>999$</Typography>
+								<Typography>ADD To Card</Typography>
+							</Box>{" "}
+						</Link>
 					</SwiperSlide>
 					<SwiperSlide>
-						<Box className="bg-gray">
-							<img src="/images/huawi.png" height={"100px"} />
-							<Typography variant="h6" sx={{fontWeight:700}}>Huawi Phone</Typography>
-							<Typography sx={{fontWeight:700}}>999$</Typography>
-							<Typography>ADD To Card</Typography>
-						</Box>{" "}
+						<Link to="/productdetail" sx={{ color: "black" }}>
+							<Box className="bg-gray">
+								<img src="/images/huawi.png" height={"100px"} />
+								<Typography variant="h6" sx={{ fontWeight: 700 }}>
+									Huawi Phone
+								</Typography>
+								<Typography sx={{ fontWeight: 700 }}>999$</Typography>
+								<Typography>ADD To Card</Typography>
+							</Box>{" "}
+						</Link>
 					</SwiperSlide>
 					<SwiperSlide>
-						<Box className="bg-gray">
-							<img src="/images/huawi.png" height={"100px"} />
-							<Typography variant="h6" sx={{fontWeight:700}}>Huawi Phone</Typography>
-							<Typography sx={{fontWeight:700}}>999$</Typography>
-							<Typography>ADD To Card</Typography>
-						</Box>{" "}
+						<Link to="/productdetail" sx={{ color: "black" }}>
+							<Box className="bg-gray">
+								<img src="/images/huawi.png" height={"100px"} />
+								<Typography variant="h6" sx={{ fontWeight: 700 }}>
+									Huawi Phone
+								</Typography>
+								<Typography sx={{ fontWeight: 700 }}>999$</Typography>
+								<Typography>ADD To Card</Typography>
+							</Box>{" "}
+						</Link>
 					</SwiperSlide>
-
-				
 				</Swiper>
 			</>
 		</Container>

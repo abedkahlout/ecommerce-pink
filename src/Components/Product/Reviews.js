@@ -8,6 +8,30 @@ import { Avatar, Divider } from "@mui/material";
 import { Stack } from "@mui/system";
 import StarIcon from "@mui/icons-material/Star";
 
+
+const comments = [{
+	name:"AbedElqader KH",
+	stars:5,
+	comment:"	Now, windows 11 was already installed, but I did have to disable the S mode. Googled some directions on this process. Office only has a trial"
+},
+{
+	name:"Mohammed St",
+	stars:5,
+	comment:"	Now, windows 11 was already installed, but I did have to disable the S mode. Googled some directions on this process. Office only has a trial"
+},
+{
+	name:"Ahmed Moh",
+	stars:5,
+	comment:"	Now, windows 11 was already installed, but I did have to disable the S mode. Googled some directions on this process. Office only has a trial"
+},
+{
+	name:"Ramy sd",
+	stars:5,
+	comment:"	Now, windows 11 was already installed, but I did have to disable the S mode. Googled some directions on this process. Office only has a trial"
+}
+]
+
+
 function TabPanel(props) {
 	const { children, value, index, ...other } = props;
 
@@ -58,11 +82,12 @@ export default function Reviews() {
 				</Tabs>
 			</Box>
 			<TabPanel value={value} index={0}>
-				<Box mb={2}>
+				{comments.map((e)=><>
+					<Box mb={2}>
 					<Stack direction={"row"} alignItems={"center"} gap={2}>
 						<Avatar alt="Abed Elqader" src="/static/images/avatar/1.jpg" />
 						<Stack>
-							<Typography>Abed Elqader</Typography>
+							<Typography>{e.name}</Typography>
 							<Typography>
 								<StarIcon fontSize="small" className="star-color" />{" "}
 								<StarIcon fontSize="small" className="star-color" />{" "}
@@ -73,10 +98,12 @@ export default function Reviews() {
 						</Stack>
 					</Stack>
 					<Typography>
-						Now, windows 11 was already installed, but I did have to disable the S
-						mode. Googled some directions on this process. Office only has a trial
+					{e.comment}
 					</Typography>
 				</Box>
+				
+				</>)}
+
 			</TabPanel>
 			<TabPanel value={value} index={1}>
 				<Typography>

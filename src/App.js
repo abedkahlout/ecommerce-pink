@@ -7,6 +7,8 @@ import { useTranslation } from "react-i18next";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import Product from "./Pages/ProductDet";
+import About from "./Pages/About";
+import Products from "./Pages/Products";
 
 const theme = createTheme({
 	direction: "rtl",
@@ -31,7 +33,10 @@ function App() {
 			<ThemeProvider theme={theme}>
 				<Routes>
 				<Route path="/" element={<Home />} />
+				<Route path="home" element={<Home />} />
 				<Route path="productdetail" element={<Product />} />
+				<Route path="about" element={<About />} />
+				<Route path="products" element={<Products />} />
 				</Routes>
 			</ThemeProvider>
 		</div>
