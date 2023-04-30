@@ -9,6 +9,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import PhoneIcon from "@mui/icons-material/Phone";
 import MarkEmailReadIcon from "@mui/icons-material/MarkEmailRead";
 import PersonIcon from "@mui/icons-material/Person";
+import { t } from "i18next";
 
 function Header() {
 	return (
@@ -40,20 +41,20 @@ function Header() {
 						alignItems={"center"}
 						gap={{ xs: 1, lg: 5 }}
 					>
-						<Stack direction={'row'} alignItems={'center'} gap={1}>
+						<Stack direction={'row'} alignItems={'center'} gap={1} className="texture">
 							{" "}
 							<PhoneIcon fontSize="small" className="Icons-header2" />
 							+972595855555
 						</Stack>
-						<Stack direction={'row'} alignItems={'center'} gap={1}>
+						<Stack direction={'row'} alignItems={'center'} gap={1} className="texture">
 							{" "}
 							<MarkEmailReadIcon fontSize="small" className="Icons-header2" />
 							abed@gmail.com
 						</Stack>
-						<Stack direction={'row'} alignItems={'center'} gap={1}>
+						<Stack direction={'row'} alignItems={'center'} gap={1} className="texture">
 							{" "}
 							<PersonIcon fontSize="small" className="Icons-header2" />
-							account
+							{t('account')}
 						</Stack>
 					</Stack>
 				</Box>

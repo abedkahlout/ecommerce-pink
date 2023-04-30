@@ -11,7 +11,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import "./Layout.css";
-import i18next from "i18next";
+import i18next, { t } from "i18next";
 import { alpha, InputBase, Stack } from "@mui/material";
 import { Link, NavLink } from "react-router-dom";
 
@@ -78,7 +78,6 @@ function Navbar() {
 						variant="h6"
 						noWrap
 						component="a"
-						href="/"
 						sx={{
 							display: { xs: "none", md: "flex" },
 							fontFamily: "monospace",
@@ -126,7 +125,8 @@ function Navbar() {
 							{pages.map((e) => (
 								<MenuItem key={e.name} onClick={handleCloseNavMenu}>
 									<Link key={e.name} to={e.links}>
-									{e.name}
+									{t(e.name)}
+
 								</Link>
 								</MenuItem>
 							))}

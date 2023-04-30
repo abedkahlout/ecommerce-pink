@@ -29,5 +29,8 @@
     height: 70px !important;
     padding: 10px;
 }
+.texture{
+    display: none !important;
+}
 
 }

@@ -2,6 +2,7 @@ import { Button, Container, Stack, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import "./Layout.css";
+import { t } from "i18next";
 
 function Banner() {
 	return (

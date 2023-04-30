@@ -9,11 +9,12 @@ import DevicesOtherIcon from "@mui/icons-material/DevicesOther";
 import ConnectedTvIcon from "@mui/icons-material/ConnectedTv";
 import BroadcastOnHomeIcon from "@mui/icons-material/BroadcastOnHome";
 import EarbudsBatteryIcon from "@mui/icons-material/EarbudsBattery";
+import { t } from "i18next";
 
 function Categories() {
 	return (
 		<Container  sx={{my:7}}>
-            <Typography variant="h5" sx={{my:3, fontWeight:700}}>Category</Typography>
+            <Typography variant="h5" sx={{my:3, fontWeight:700}}>{t('Category')}</Typography>
 			<Stack direction={{xs:"column" , md:"row"}} justifyContent={{xs:"start" , md:"space-between"}}>
 				<Typography>
 					<Link to={"/"} className="links-active">
