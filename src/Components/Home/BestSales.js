@@ -19,7 +19,14 @@ function BestSales() {
 			</Typography>
 			<>
 				<Swiper
-					slidesPerView={4}
+				  breakpoints={{
+					640: {
+					  slidesPerView: 1,
+					},
+					768: {
+					  slidesPerView: 3,
+					},
+				  }}
 					spaceBetween={20}
 					cssMode={true}
 					navigation={true}
